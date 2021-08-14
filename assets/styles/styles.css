@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+*{
+    color: #000;
+    text-decoration: none;
+}
+
+header{
+    background: rgb(250, 95, 48);
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    border-bottom-left-radius: 20px;
+    /* border-bottom-right-radius: 20px; */
+    font-size: 17px;
+    padding: 0px 50px;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+}
+.logo a{
+    font-weight: 800;
+    color: white;
+    margin-bottom: 35px;
+}
+.menu li{
+    list-style-type:none;
+    padding:15px;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li a{
+    color: white;
+    font-weight: 400;
+}
+
+.menu ul li .activemenu{
+    font-weight: 900;
+}
+.hero{
+    margin-top: 30px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heroimage img{
+    width: 400px
+}
+.hero_intro {
+    text-align: center;
+}
+.hero_intro h1{
+    color: rgb(104, 103, 103);
+}
+.hero_intro span{
+    color: rgb(250, 95, 48);
+}
+.hero_intro p{
+    color: rgb(104, 103, 103);
+    font-size: 20px;
+    font-weight: 600;
+}
+.tech-stack{
+    margin-top: 35px;
+    background: rgb(241, 239, 239);
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.projects a, .blogs a{
+    margin:0px 90px
+}
+.projects{
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.projects a, .blogs a{
+    background:rgb(250, 95, 48);
+    /* margin-left: -400px; */
+    width: 100px;
+    height: 20px;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.blogs{
+    margin-top: 15px;
+    background: rgb(241, 239, 239);
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer{
+    background: rgb(250, 95, 48);
+    height: 150px;
+    /* border-top-left-radius: 20px; */
+    border-top-right-radius: 20px;
+    margin-top: 10px;
+}
+
+.touch h2{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 0px;
+    padding-top: 15px;
+}
+.socialicons{
+    display: flex;
+    justify-content: center;
+}
+.socialicons ul i{
+    color: white;
+    font-size: 30px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.socialicons ul i:hover{
+    color: black;
+    transition: 0.1s;
+}
+
+footer p{
+    color: white;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+.projectsimages img{
+    width: 300px;
+}
+
+.projectred{
+    color: rgb(250, 95, 48);
+    width: 100%;
+}
+.projectitems{
+    /* justify-content: center; */
+    max-width: 600px;
+    padding: 1rem 1rem;
+    margin: 1rem auto;
+}
+.projectitems ul li{
+    list-style-type:none;
+    margin-bottom: 60px;
+}
+
+.project-button a{
+    border: 1px solid rgb(250, 95, 48);
+    padding: 8px;
+    border-radius: 5px;
+}
+.projectitems ul li p{
+    margin-top: -10px;
+}
+.buttonactive{
+    background:rgb(250, 95, 48);
+    color: white
+}

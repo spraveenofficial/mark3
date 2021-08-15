@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started with GIT in 2021 | Praveen Kumar Singh</title>
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">Praveen</a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a class="activemenu" href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="blog">
+      <div class="blog-title">
+        <h1>Getting Started with GIT in 2021</h1>
+      </div>
+      <div class="author_data">
+        <p class="authorname">Praveen Singh</p>
+        <p class="postdate">Date: 12th August 2021</p>
+      </div>
+      <div class="blogpost">
+        <p>
+          Hey Folks, have you wondered what Git is, what is works for and how to
+          get started with? <br /><br />
+
+          Well, as we all developers already knows that GIT is very popular tool
+          for developers around the globe. If you don't know what what GIT
+          exactly is, then don't worry. This article will try to clear all such
+          doubts that comes in every begineer mind. Let't jump to main topic.
+          <br />
+        </p>
+        <h2>Prerequisites</h2>
+        <h4>
+          <li>Internet & Computer Basics</li>
+          <li>Terminal Basics - clear, cd , mkdir, rm</li>
+        </h4>
+        <p>That’s pretty much. You are ready to go :)</p>
+        <h2>What is Git?</h2>
+        <p>Let's know this from Git's documentation: <br /></p>
+        <p class="word-light">
+          Git is a free and open source distributed version control system
+          designed to handle everything from small to very large projects with
+          speed and efficiency.
+        </p>
+        <p>
+          The full form of GIT is Global Information Tracker. It is basically
+          designed for programmers to work together It is basically designed for
+          programmers to work together on the same source code at the same time.
+          <br />
+          <br />
+          So, imagine you are working in an company / organisation with 100+
+          people and all the developers have a copy of the project on their
+          local system of the computer. Now, if a second developer who is also
+          your friend, let's call him Rohit, introdues a new changes in database
+          schemas and tells you about it because he is your friend only, the
+          project with new commit will only be stored in Rohit's system (local
+          machine) and you as the lead developer will have to copy Rohit's local
+          machine through some resources. Now this situation becomes worse. Here
+          git plays very important role. When each and every employee is use
+          GIT, and if Rohit makes any changes to codebase, you along with other
+          developers will find that out instantly. What change that some made,
+          each and every thing gets noticed by using any version control system.
+        </p>
+        <h2>Getting Started with Git</h2>
+        <p>
+          Before understanding and using Git commands, I am assuming that git is
+          already installed and configured on your machine correctly. <br />
+          <br />
+          If not, Please follow the steps below to install and configure Git.
+        </p>
+        <h4>Step 1: Installing Git</h4>
+        <p>
+          For installing Git locally to your machine, Please follow this
+          <a
+            href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git"
+            >Link</a
+          >
+          to install Git on your System.
+        </p>
+        <p>
+          Once you’ve installed Git on your system, let’s fire up the
+          Terminal/Command Prompt and get ready to go with Git. Please run the
+          following command to check if Git was installed properly or not. If
+          this commands not works for you please try to add Environment Variable
+          to your system.
+        </p>
+        <p class="codeline">git --version</p>
+        <h4>Step 2: Configuring Git</h4>
+        <p>
+          It's very important to set up some of the basics credentials like
+          email and name before using git, by this you will gets to know which
+          changes was made by whom. <br />
+          <br />
+          First, run the below given command to setup your username.
+        </p>
+        <p class="codeline">git config --global user.name "yourusername"</p>
+        <p>And now, run the following command to set up your email:</p>
+        <p class="codeline">
+          git config --global user.email "email@example.com"
+        </p>
+        <h2>Basic Git Commands</h2>
+        <p>
+          Till Now, that we have basic knowledge of what Git does and what's the
+          main purpose of Git. We have it installed on our system, let’s start
+          using it.
+        </p>
+        <h3>Git Init</h3>
+        <p>
+          This command is used to initialized an empty git repository to your
+          current directory.
+        </p>
+        <p class="codeline">$ git init</p>
+        <h3>Git Status</h3>
+        <p>
+          It gives the status of current working directory files changed and
+          those which still need to add or commit. It does this on the basis of
+          changes made in the files.
+        </p>
+        <p class="codeline">$ git status</p>
+        <h3>Git Add</h3>
+        <p>This is use to add one or more files to the staging area.</p>
+        <p class="codeline">$ git add < filename ></p>
+        <p>This is use to add all of the files to the staging area.</p>
+        <p class="codeline">$ git add .</p>
+        <h3>Git Commit</h3>
+        <p>
+          A commit is nothing but its like a checkpoint for any repository. This
+          command is used to commit changes to the head locally.
+        </p>
+        <p class="codeline">$ git commit -m "commit message"</p>
+        <p>-m flag is used to give a message related to the commit.</p>
+        <h3>Git Branch</h3>
+        <p>
+          While you are working on any project, there might be a point say where
+          you want to try adding new features to your already awesome project.
+        </p>
+        <p class="codeline">
+          $ git branch
+        </p>
+        <h3>Git Log</h3>
+        <p>
+          This command is used to get all the previous commit with each and every details like message, date & time.
+        </p>
+        <p class="codeline">
+          $ git log
+        </p>
+        <h3>
+          Git Push
+        </h3>
+        <p>
+          This commands Push the changes to the remote repository.
+        </p>
+        <p class="codeline">
+          $ git push origin master
+        </p>
+        <h2>
+          Conclusion
+        </h2>
+        <p>
+          I hope you were able to learn enough about why you need Git and basic Git commands that will help you get started instantly. I hope this article serves its purpose. <br> <br>
+          Feedback and criticism is more than welcome. Please share your feedback.
+        </p>
+      </div>
+    </div>
+    <footer>
+      <div class="touch">
+        <h2>Get in touch</h2>
+        <div class="socialicons">
+          <ul>
+            <a href="mailto:user@example.com"
+              ><i class="fa fa-envelope" aria-hidden="true"></i
+            ></a>
+            <a href="https://github.com/spraveenofficial"
+              ><i class="fa fa-github" aria-hidden="true"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/praveen-kumar-singh-a45816132/"
+              ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+            ></a>
+            <a href="https://twitter.com/spraveenoffice"
+              ><i class="fa fa-twitter" aria-hidden="true"></i
+            ></a>
+          </ul>
+        </div>
+        <p>Made with ❤ by Praveen Kumar Singh</p>
+      </div>
+    </footer>
+  </body>
+</html>

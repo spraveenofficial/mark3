@@ -181,3 +181,48 @@ footer p{
     background:rgb(250, 95, 48);
     color: white
 }
+
+.blog{
+    margin: 40px 20px;
+}
+
+@media (min-width: 768px){
+    .blog{
+        margin: 40px 120px;
+    }
+    .codeline{
+        width: 500px
+    }
+}
+.author_data{
+    display: flex;
+}
+
+.author_data p{
+    margin-top: -10px;
+    margin-right: 20px;
+}
+.authorname{
+    background: rgb(250, 95, 48);
+    padding: 2px;
+    border-radius: 3px;
+    color: white;
+}
+.postdate{
+    background: blue;
+    padding: 2px;
+    border-radius: 3px;
+    color: white
+}
+.word-light{
+    color: grey;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.codeline{
+    padding: 10px;
+    background: grey;
+    color: white;
+    border-radius: 3px;
+}

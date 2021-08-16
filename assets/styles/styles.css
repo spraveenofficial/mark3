@@ -226,3 +226,7 @@ footer p{
     color: white;
     border-radius: 3px;
 }
+.codeline span{
+    color: white;
+    margin-left: 25px
+}

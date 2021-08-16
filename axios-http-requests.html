@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Requests using Axios | Praveen Kumar Singh</title>
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">Praveen</a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="blog">
+      <div class="blog-title">
+        <h1>Get Requests using Axios</h1>
+      </div>
+      <div class="author_data">
+        <p class="authorname">Praveen Singh</p>
+        <p class="postdate">Date: 12th August 2021</p>
+      </div>
+      <div class="blogpost">
+        <p>
+          Hey folks, welcome back to another article, Today we are here with
+          some interesting topic related to Web Development. <br />
+          <br />
+          Obviously, it's none other than axios, the most powerful tool in web
+          developers community.
+          <br />
+          <br />
+          I will try to explain this by providing easy to understand examples
+          and simplified concepts. Let's jump to the main topic of this article.
+        </p>
+        <h2>What is Axios?</h2>
+        <p>
+          Axios, is a javascript library used to make HTTP requests (Restful or
+          GraphQL API) from node.js or XMLHttpRequest from the browser. Axios
+          accomplies the same task as the fetch API provide by the many browser.
+        </p>
+        <h2>Prerequisites:</h2>
+        <p>
+          In order to use Axios you first need to have Node.js installed in your
+          local machine / computer. In case if you didn't have installed yet
+          please click on this <a href="https://nodejs.org/en/">link</a>. This
+          link will take you to the official Node.js website. <br />
+          <br />
+          Next, we must install axios package in project. To get this done, just
+          run the following command in your terminal.
+        </p>
+        <p class="codeline">npm install axios</p>
+        <p>In case, if you use yarn, then follow this command:</p>
+        <p class="codeline">yarn add axios</p>
+        <h2>Using Axios</h2>
+        <p>
+          The main reason is to use Axios instead of fetch API is because it
+          provides a very clean and precise syntax. Nevertheless, it’s important
+          to acknowledge that Axios is not always an ideal solution, and there
+          are tons of better options are there for making HTTP requests.
+        </p>
+        <h3>Code using Axios</h3>
+        <p>
+          Yeah, now we are are good to go with Axios. We are going to write our
+          first line of code below. Follow the code below: <br />
+          <br />
+          Firstly we need to import the Axios package in our project (index.js).
+        </p>
+        <p class="codeline">const axios = require('axios');</p>
+        <p>
+          Now, we have imported the Axios package successfully. We are going to
+          hit an dummy api to get your all confusing rid out of your mind.
+        </p>
+        <p class="codeline">
+          const getRequest = () =>{ <br />
+          <span>axios.get('https://jsonplaceholder.com') <br /></span>
+          <span>.then(response => console.log(response.data)) <br /></span>
+          <span>.catch(error => console.log(error)); <br /></span>
+
+          } <br />
+          <br />
+
+          getRequest();
+        </p>
+        <p>
+          In the above example, I am making GET request to the dummy api to
+          obtain a object / list. To use Axios library we call the axios
+          function and then we call any of the methods provided by the Axios
+          library which represent the different HTTP verbs. You need to learn
+          about HTTP requests type. Since Axios works with Promises the code on
+          line 3 in the given above example will return a Promise.
+        </p>
+        <h2>Conclusion</h2>
+        <p>
+          And that’s all in this article! You now know how to get started with
+          Axios, and how it can be much simpler than XML or fetch requests.
+          Thanks for reading! <br />
+          <br />
+          Hopefully this blog provided a better understanding in how to use
+          Axios GET requests for fetching data and convinced you that it’s a best & better
+          alternative to the fetch api.
+        </p>
+      </div>
+    </div>
+    <footer>
+      <div class="touch">
+        <h2>Get in touch</h2>
+        <div class="socialicons">
+          <ul>
+            <a href="mailto:user@example.com"
+              ><i class="fa fa-envelope" aria-hidden="true"></i
+            ></a>
+            <a href="https://github.com/spraveenofficial"
+              ><i class="fa fa-github" aria-hidden="true"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/praveen-kumar-singh-a45816132/"
+              ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+            ></a>
+            <a href="https://twitter.com/spraveenoffice"
+              ><i class="fa fa-twitter" aria-hidden="true"></i
+            ></a>
+          </ul>
+        </div>
+        <p>Made with ❤ by Praveen Kumar Singh</p>
+      </div>
+    </footer>
+  </body>
+</html>
